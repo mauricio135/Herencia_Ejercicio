@@ -34,7 +34,7 @@ Deberás identificar todas las clases del problema y como estas se relacionan en
 
 ### Desafío 2
 Deberas programar todas estas clases junto con un ejemplo de ejecución en el Program. 
-En cuanto al funcionamiento del sistema, solamente es necesario mantener una lista de Conductores y Pasajeros y realizar la publicación correspondiente cuando se agrega un nuevo pasajero o conductor. Para ello, podrás hacer uso de la API de twitter provista en el siguiente repo: https://github.com/ucudal/PII_TwitterApi
+En cuanto al funcionamiento del sistema, solamente es necesario mantener una lista de **Conductores** y **Pasajeros** y realizar la publicación correspondiente cuando se agrega un nuevo pasajero o conductor. Para ello, podrás hacer uso de la API de twitter provista en el siguiente repo: https://github.com/ucudal/PII_TwitterApi
 
 ### Desafío 3 (Desafío Bonus!)
 Si bien la universidad espera que los usuarios, al ser adultos, no publiquen fotos inadecuadas en twitter, todos pueden cometer errores y por lo tanto se desea aplicar un filtro a las potenciales fotos a publicar:
