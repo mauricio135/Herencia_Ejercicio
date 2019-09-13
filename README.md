@@ -1,6 +1,9 @@
 # Universidad Católica del Uruguay
-# Facultad de Ingeniería y Tecnologías
-# Programación II
+
+## Facultad de Ingeniería y Tecnologías
+
+### Programación II
+
 ## Ejercicio Herencia
 
 ### Objetivo
