@@ -1,8 +1,6 @@
-# Universidad Católica del Uruguay
+![UCU](https://github.com/ucudal/PII_Conceptos_De_POO/raw/master/Assets/logo-ucu.png)
 
-## Facultad de Ingeniería y Tecnologías
-
-### Programación II
+### FIT - Universidad Católica del Uruguay
 
 ## Ejercicio Herencia
 
@@ -24,11 +22,6 @@ A su vez, los conductores podran ser identificados de dos formas:
 Con el fin de promocionar este nuevo servicio, la Facultad ha creado una nueva cuenta de Twitter, en la cual desea publicar cada nuevo registro de conductores y pasajeros. Cada vez que un nuevo voluntario se registra como conductor, se publicará una foto del conductor con su bio y un mensaje de bienvenida. Cada vez que un nuevo pasajero se registra para utilizar la app se debera publicar tambien su foto<sup>3</sup> de perfil con su nombre.
 
 
-
-<sup>1</sup>*A los efectos de este sistema, no es necesario diferenciar entre Profesores y Alumnos*</br>
-<sup>2</sup>*No es necesario modelar la clase Vehículo, pero puedes hacerlo si te divierte*</br>
-<sup>3</sup>*Solamente un string con el path a la imagen es suficiente para este ejercicio*
-
 ### Desafío 1
 Deberás identificar todas las clases del problema y como estas se relacionan entre si. Para representar esto, debes utilizar un diagrama de clases muy básico, similar a los visto en los ejemplos. Podrás realizar esto en papel y subir una foto del mismo.
 
@@ -42,3 +35,9 @@ Si bien la universidad espera que los usuarios, al ser adultos, no publiquen fot
  * Todas las fotos de perfil de los conductores deberan contener una cara y además estar sonriendo. 
 
 Para ello, podrás hacer uso de la API de twitter provista en el siguiente repo: https://github.com/ucudal/PII_CognitiveAPI
+
+****
+
+<sup>1</sup>*A los efectos de este sistema, no es necesario diferenciar entre Profesores y Alumnos*</br>
+<sup>2</sup>*No es necesario modelar la clase Vehículo, pero puedes hacerlo si te divierte*</br>
+<sup>3</sup>*Solamente un string con el path a la imagen es suficiente para este ejercicio*
