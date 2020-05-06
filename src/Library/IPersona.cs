@@ -8,6 +8,7 @@ namespace Herencia_Ejercicio.Library
         string Apellido { get; set; }
         string Cedula { get; set; }
         int Calificacion { get; set; }
+         public string ImprimeDatos();
 
     }
 }

@@ -19,5 +19,13 @@ namespace Herencia_Ejercicio.Library
             conductor.Calificacion += calificacion;
 
         }
+        
+        public string ImprimeDatos()
+        {
+            return $" Nuevo registro de Pasajero:  {this.Nombre} {this.Apellido} ";
+
+        }
+
+
     }
 }
