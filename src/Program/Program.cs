@@ -15,7 +15,8 @@ namespace Herencia_Ejercicio.Library
 */          
             IPersona pasajero1 = new Pasajero("Levi","de los Santos","42169107",0);
             IPersona conductor1 = new Conductor("Scooby","Do","42169107",0,"Muchos viajes con buenas referencias");
-
+            ConductorPool conductorPool1 = new ConductorPool("Scooby","Do","42169107",0,"Muchos viajes con buenas referencias");
+            conductorPool1.Capacidad = 5;
            // Usuario conductorPool1 = nuevo ConductorPool(maxPasajeros = 3)
 
           //  Registro rideShare = new Registro<pasajero1>;
@@ -29,7 +30,7 @@ namespace Herencia_Ejercicio.Library
             string accessTokenSecret = "675fHmUzeaPajtj3pO64w5xd3p9YI3kco7kSvKhzeEvYe";
             string accessToken = "1396065818-8vnV9HJFW5ArcfFg2zE9hLA68CZYFXO8Cjv6o2E";
             var twitter = new TwitterImage(consumerKey, consumerKeySecret, accessToken, accessTokenSecret);
-            Console.WriteLine(twitter.PublishToTwitter(conductor1.ImprimeDatos(), @"scooby.jfif"));
+            Console.WriteLine(twitter.PublishToTwitter(conductorPool1.ImprimeDatos(), @"scooby.jfif"));
             var twitterDirectMessage = new TwitterMessage(consumerKey, consumerKeySecret, accessToken, accessTokenSecret);
             Console.WriteLine(twitterDirectMessage.SendMessage("Hola!", "380889967"));
 

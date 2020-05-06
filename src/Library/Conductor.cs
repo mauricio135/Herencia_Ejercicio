@@ -24,7 +24,7 @@ namespace Herencia_Ejercicio.Library
 
         }
         
-        public string ImprimeDatos()
+        public virtual string ImprimeDatos()
         {
             return $" Nuevo registro de Conductor:  {this.Nombre} {this.Apellido} \n bio : {this.Bio}";
 
