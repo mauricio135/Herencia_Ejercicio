@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 
-namespace PII_Herencia
+namespace Herencia_Ejercicio.Library
 {
     public class Conductor:IPersona
     {
