@@ -1,31 +1,22 @@
 namespace Herencia_Ejercicio.Library
 {
-    public class Pasajero : IPersona
+    public class Pasajero : Persona
     {
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
-        public string Cedula { get; set; }
-        public int Calificacion { get; set; }
-         public Pasajero(string nombre, string apellido, string cedula , int calificacion )
+
+        public Pasajero (string nombre, string apellido, string cedula, int calificacion, string foto)
         {
             this.Nombre = nombre;
             this.Apellido = apellido;
             this.Cedula = cedula;
             this.Calificacion = calificacion;
+            this.Foto = foto;
         }
-        
-        void CalificarViaje(int calificacion, Conductor conductor)
+
+        public override string ImprimeDatos ()
         {
-            conductor.Calificacion += calificacion;
+            return $" Bienvenido {this.Nombre}! nuevo Usuario de UCURide ";
 
         }
-        
-        public string ImprimeDatos()
-        {
-            return $" Nuevo registro de Pasajero:  {this.Nombre} {this.Apellido} ";
-
-        }
-
 
     }
 }
