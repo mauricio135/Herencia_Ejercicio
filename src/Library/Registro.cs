@@ -30,7 +30,7 @@ namespace Herencia_Ejercicio.Library
             {
                 var twitter = new TwitterImage (consumerKey, consumerKeySecret, accessToken, accessTokenSecret);
                 Console.WriteLine (twitter.PublishToTwitter (item.ImprimeDatos (), item.Foto));
-                Console.WriteLine ("Encuentra Cara de Persona con Sonrirsa y se manda a Twitter");
+                Console.WriteLine ("Encuentra Cara de Persona y se manda a Twitter");
 
             }
             else if (item.GetType ().Equals (typeof (Conductor)) || (item.GetType ().Equals (typeof (ConductorPool))) &&
@@ -38,7 +38,7 @@ namespace Herencia_Ejercicio.Library
             {
                 var twitter = new TwitterImage (consumerKey, consumerKeySecret, accessToken, accessTokenSecret);
                 Console.WriteLine (twitter.PublishToTwitter (item.ImprimeDatos (), item.Foto));
-                Console.WriteLine ("Se encuentra cara de Conductor y se publica en Twitter");
+                Console.WriteLine ("Se encuentra cara con Sonrisa de Conductor y se publica en Twitter");
 
             }
             else
