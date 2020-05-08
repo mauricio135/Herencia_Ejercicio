@@ -25,7 +25,7 @@ namespace Herencia_Ejercicio.Library
             CognitiveFace cog = new CognitiveFace (cognitiveKey, true, Color.GreenYellow);
             cog.Recognize (item.Foto);
 
-            if (item.GetType ().Equals (typeof (Pasajero)) && (cog.FaceFound && cog.SmileFound))
+            if (item.GetType ().Equals (typeof (Pasajero)) && (cog.FaceFound) )
 
             {
                 var twitter = new TwitterImage (consumerKey, consumerKeySecret, accessToken, accessTokenSecret);
@@ -34,7 +34,7 @@ namespace Herencia_Ejercicio.Library
 
             }
             else if (item.GetType ().Equals (typeof (Conductor)) || (item.GetType ().Equals (typeof (ConductorPool))) &&
-                (cog.FaceFound))
+                (cog.FaceFound && cog.SmileFound))
             {
                 var twitter = new TwitterImage (consumerKey, consumerKeySecret, accessToken, accessTokenSecret);
                 Console.WriteLine (twitter.PublishToTwitter (item.ImprimeDatos (), item.Foto));
