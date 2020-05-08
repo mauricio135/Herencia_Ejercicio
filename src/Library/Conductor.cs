@@ -17,7 +17,7 @@ namespace Herencia_Ejercicio.Library
         
         public override string ImprimeDatos()
         {
-            return $"Bienvenido {this.Nombre}, El nuevo Conductor de UCURide! \n Bio: : {this.Bio}";
+            return $"Bienvenido {this.Nombre}, El nuevo Conductor de UCURide! \n Bio: {this.Bio}";
 
         }
 

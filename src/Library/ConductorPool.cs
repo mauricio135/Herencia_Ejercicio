@@ -31,7 +31,7 @@ namespace Herencia_Ejercicio.Library
          
         public  override string ImprimeDatos()
          {
-            return $"Bienvenido {this.Nombre}, El nuevo Conductor Pool de UCURide que llevara hasta {this.Capacidad} Pasajeros!. \n Bio: : {this.Bio}";
+            return $"Bienvenido {this.Nombre}, El nuevo Conductor Pool de UCURide que llevara hasta {this.Capacidad} Pasajeros!. \n Bio:  {this.Bio}";
 
         }
 
