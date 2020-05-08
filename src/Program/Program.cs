@@ -1,40 +1,31 @@
 ﻿using System;
-using System.Collections;
+using System.Collections.Generic;
+using TwitterUCU;
 
-namespace PII_Herencia
+namespace Herencia_Ejercicio.Library
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main (string[] args)
         {
-            /*
-            En éste método deberas mostrar un ejemplo de funcionamiento de tu programa an pseudocódigo. A continuación te 
-            planteamos un ejemplo de como hacerlo. Esto no significa que te limites a hacer solamente esto, debes pensar 
-            en grande!
-
-            Usuario pasajero1 = nuevo Pasajero()
-            Usuario pasajero2 = nuevo Pasajero()
-            Usuario pasajero3 = nuevo Pasajero()
-            Usuario conductor1 = nuevo Conductor()
-            Usuario conductorPool1 = nuevo ConductorPool(maxPasajeros = 3)
-            UcuRideShare rideShare = nuevo UcuRideShare()
+            //Se instancian los diferentes tipos de Personas : Pasajero , Conductor y conductorPool 
+            Pasajero pasajeroReal = new Pasajero ("Sylvester", "Stallone", "42169107", 0, @"Sylvester.jpg");
+            Pasajero pasajeroFalso = new Pasajero ("Yate", "Rodriguez", "42169107", 0, @"yacht.jpg");
+            Conductor conductorFeliz = new Conductor ("Sylvester", "Stallone", "42169107", 0, @"SylvesterFeliz.jpg", "Muchos viajes con muy buenas referencias");
+            Conductor conductorSerio = new Conductor ("Silvester", "Stallone", "42169107", 0, @"Sylvester.jpg", "Muchos viajes con muy buenas referencias");
+            ConductorPool conductorPool1 = new ConductorPool ("Jack", "Nicholson", "42169107", 0, @"Jack.jpg", "Maneja con mucha cautela",3 );
             
-            rideShare.Add(conductor1)
-            Se publica en Twitter un nuevo conductor!
+            //Se crea instancia de registro que es donde se accionan los envios a Twitter al momento 
+            //que se agregan a la lista
+            Registro<Persona> registro = new Registro<Persona> ();
 
-            rideShare.Add(conductorPool1)
-            Se publica en Twitter un nuevo conductor!
+            //Se agregan las Personas que se crearon anteriormente  a la lilsta de Registros
+            registro.Add(pasajeroReal);
+            registro.Add(pasajeroFalso);
+            registro.Add (conductorFeliz);
+            registro.Add (conductorSerio);
+            registro.Add (conductorPool1);
             
-            rideShare.Add(pasajero1)
-            Se publica en Twitter nuevo registro de pasajero!
-            
-            rideShare.Add(pasajero2)
-            Se publica en Twitter nuevo registro de pasajero!
-
-            rideShare.Add(pasajero3)
-            Se publica en Twitter nuevo registro de pasajero!
-
-            */
         }
     }
 }
